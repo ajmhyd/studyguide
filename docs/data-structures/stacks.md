@@ -118,4 +118,24 @@ class Stack {
     this.size--;
     return temp.value;
   }
+  isEmpty() {
+    return this.size === 0;
+  }
+  peek() {
+    if (this.isEmpty()) {
+      return undefined;
+    }
+    return this.last.value;
+  }
 }
+```
+
+---
+
+## Sample Questions
+
+- Write an algorithm to determine if all of the delimiters in an expression are matched and closed.
+
+  - E.g. `{ac[bb]}`, `[dklf(df(kl))d]{}` and `{[[[]]]}` are matched. But `{3234[fd]}` and `{df][d}]}` are note.
+
+- Sort a stack in ascending order using an additional stack.
