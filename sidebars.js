@@ -1,7 +1,7 @@
 module.exports = {
   someSidebar: {
-    'Data Structures': ['data-structures/stacks'],
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
+    'Data Structures': ['data-structures/linkedLists','data-structures/stacks', 'data-structures/queues'],
+    Docusaurus: ['doc1'],
     Features: ['mdx'],
   },
 };

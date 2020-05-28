@@ -18,7 +18,7 @@ A stack is "last in first out" `LIFO`.
 
 - `pop()` Removes the top item from the stack `O(1)`
 
-- `push()` Adds and item to the top of the stack `O(1)`
+- `push(item)` Adds and item to the top of the stack `O(1)`
 
 - `peek()` Returns the item at the top of the stack but _does not remove it_ `O(1)`
 
@@ -37,46 +37,26 @@ class Stack {
   constructor() {
     this.stack = [];
   }
-}
-```
 
-#### length()
+  length() {
+    return this.stack.length;
+  }
 
-```js
-length() {
-  return this.stack.length;
-}
-```
+  push(item) {
+    return this.stack.push(item);
+  }
 
-#### push()
+  pop() {
+    return this.stack.pop();
+  }
 
-```js
-push(item) {
-  return this.stack.push(item);
-}
-```
+  peek() {
+    return this.stack[this.length - 1];
+  }
 
-#### pop()
-
-```js
-pop() {
-  return this.stack.pop();
-}
-```
-
-#### peek()
-
-```js
-peek() {
-  return this.stack[this.length - 1];
-}
-```
-
-#### isEmpty()
-
-```js
-isEmpty() {
-  return this.length === 0;
+  isEmpty() {
+    return this.length === 0;
+  }
 }
 ```
 
@@ -122,9 +102,7 @@ class Stack {
     return this.size === 0;
   }
   peek() {
-    if (this.isEmpty()) {
-      return undefined;
-    }
+    if (this.isEmpty()) return null;
     return this.last.value;
   }
 }
