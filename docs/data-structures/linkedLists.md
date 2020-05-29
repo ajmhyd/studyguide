@@ -84,16 +84,70 @@ class SinglyLinkedList {
   }
 
   pop() {
-    if (this.isEmpty()) return null;
-    let current = this.head;
-    let newTail = current;
-    while (current.next) {
-      newTail = current;
-      current = current.next;
+    // empty list
+    if (this.isEmpty()) {
+      return null;
+    } else if (this.length === 1) {
+      // one node in list
+      const nodeToRemove = this.head;
+      this.head = null;
+      this.tail = null;
+      this.length--;
+      return nodeToRemove;
+    } else {
+      // multiple nodes in list
+      let currentNode = this.head;
+      const nodeToRemove = this.tail;
+      let secondToLastNode;
+
+      while(currentNode) {
+        if (currentNode.next === this.tail) {
+          secondToLastNode = currentNode;
+          break;
+        }
+        currentNode = currentNode.next;
+      }
+      secondToLastNode.next = null;
+      this.tail = secondToLastNode;
+      this.length--;
+      return nodeToRemove;
     }
-    this.tail = newTail;
-    this.tail.next = null;
-    this.length--;
+  }
+
+  get(index) {
+    // index is invalid
+    if (index < 0 || index > this.length || this.isEmpty()) {
+      return null;
+    }
+    if (index === 0) {
+      return this.head;
+    }
+    if (index === this.length - 1) {
+      return this.tail;
+    }
+    let currentNode = this.head;
+    let counter = 0;
+
+    while(counter < index) {
+      counter++;
+      currentNode = currentNode.next;
+    }
+    return currentNode;
+  }
+
+  delete(index) {
+    if (index < 0 || index > this.length || this.isEmpty()) {
+      return null;
+    }
+    if (index === 0) {
+      this.head = this.head.next;
+      return;
+    }
+    const previous = this.get(index -1);
+    if(!previous || !previous.next) {
+      return;
+    }
+    previous.next = previous.next.next;
   }
 }
 ```
