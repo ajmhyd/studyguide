@@ -4,21 +4,21 @@ title: Graphs
 sidebar_label: Graphs
 ---
 
-- A graph is a data structure composed of a collection of nodes and
+A graph is a data structure composed of a collection of nodes and
 edges.
 
-- Graphs are a non-linear data structure _as opposed to a linked list, stack, or queue_
+Graphs are a non-linear data structure _as opposed to a linked list, stack, or queue_
 
-- nodes may also be referred to as vertices
+Nodes may also be referred to as vertices
 
-- Graphs are used to solve many real-world problems and can be used
+Graphs are used to solve many real-world problems and can be used
 to represent networks
 
-- Two types of graphs:
+Two types of graphs:
 
-  - Directed graphs
+- Directed graphs
 
-  - Undirected graphs
+- Undirected graphs
 
 #### Directed Graphs
 

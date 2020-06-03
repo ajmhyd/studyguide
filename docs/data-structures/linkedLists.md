@@ -4,22 +4,22 @@ title: Linked Lists
 sidebar_label: Linked Lists
 ---
 
-- Like arrays, linked lists are used to represent sequential data
+Like arrays, linked lists are used to represent sequential data
 
-- The benefit of linked lists is that insertion and deletion from anywhere in the list is `O(1)` whereas in arrays the following elements will have to be shifted
+The benefit of linked lists is that insertion and deletion from anywhere in the list is `O(1)` whereas in arrays the following elements will have to be shifted
 
-- Linked lists are a series of linked nodes where each node points to the
+Linked lists are a series of linked nodes where each node points to the
 next node in the list.
 
-  - Each node has a value and a pointer to the next node
+- Each node has a value and a pointer to the next node
 
-- Two pointer approaches are also common for linked lists. For example:
+Two pointer approaches are also common for linked lists. For example:
 
-  - **Getting the `kth` from last node** - Have two pointers, where one is `k` nodes ahead of the other. When the node ahead reaches the end, the other node is `k` nodes behind
+- **Getting the `kth` from last node** - Have two pointers, where one is `k` nodes ahead of the other. When the node ahead reaches the end, the other node is `k` nodes behind
 
-  - **Detecting cycles** - Have two pointers, where one pointer increments twice as much as the other, if the two pointers meet, means that there is a cycle
+- **Detecting cycles** - Have two pointers, where one pointer increments twice as much as the other, if the two pointers meet, means that there is a cycle
 
-  - **Getting the middle node** - Have two pointers, where one pointer increments twice as much as the other. When the faster node reaches the end of the list, the slower node will be at the middle
+- **Getting the middle node** - Have two pointers, where one pointer increments twice as much as the other. When the faster node reaches the end of the list, the slower node will be at the middle
 
 ## Singly vs. Doubly-Linked Lists
 
