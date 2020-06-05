@@ -39,7 +39,7 @@ module.exports = {
             },
             {
               label: 'Algorithms',
-              to: 'docs/algorithms',
+              to: 'docs/algorithms/big-o.md',
             },
           ],
         },
