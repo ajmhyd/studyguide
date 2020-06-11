@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Studyguide',
   tagline: 'A Studyguide of Data Structures and Algorithms in Javascript',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://ajmhyd.github.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'ajmhyd', // Usually your GitHub org/user name.
@@ -15,7 +15,7 @@ module.exports = {
       },
       links: [
         {
-          to: 'docs/data-structures/stacks',
+          to: 'docs/intro',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
