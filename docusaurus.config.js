@@ -2,7 +2,7 @@ module.exports = {
   title: 'Studyguide',
   tagline: 'A Studyguide of Data Structures and Algorithms in Javascript',
   url: 'https://ajmhyd.github.io',
-  baseUrl: '/',
+  baseUrl: '/studyguide/',
   favicon: 'img/favicon.ico',
   organizationName: 'ajmhyd', // Usually your GitHub org/user name.
   projectName: 'studyguide', // Usually your repo name.
